@@ -8,8 +8,6 @@ project ("provincia")
 # Adicione a origem ao executável deste projeto.
 add_executable (provincia "provincia.cpp" "provincia.h")
 
-if (CMAKE_VERSION VERSION_GREATER 3.12)
-  set_property(TARGET provincia PROPERTY CXX_STANDARD 20)
-endif()
+set_property(TARGET provincia PROPERTY CXX_STANDARD 11)
 
 # TODO: Adicione testes e instale destinos, se necessário.
